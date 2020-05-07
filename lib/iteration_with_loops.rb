@@ -23,7 +23,7 @@ def join_nested_strings(src)
     inner_array = []
     element_index = 0 
     while element_index < src[row_index].length do 
-      if src[row_index][element_index] == String
+      if src[row_index][element_index].is_a? String
         inner_array << src[row_index][element_index]
       end
       element_index += 1 
